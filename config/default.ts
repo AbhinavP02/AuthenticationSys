@@ -3,4 +3,42 @@ export default {
   dburi:
     "mongodb+srv://abhinavprasad0209:restnigtest@resttest.mr236ol.mongodb.net/?retryWrites=true&w=majority&appName=restTest",
   saltWorkFactor: 10, // salt rounds
+  accessTokenttl: "15m",
+  refreshTokenttl: "1y",
+  publicKey: `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApjVYvRE+goXRl3eAdrYV
+pFQ0/jlFkZGM9sQE+5xhN2GJz6WHxjvpzw+d8d8GokLWdcYyAdzUW8frefm7cgw8
+UqOFCJXYBbRC/tWPEKWXiiA6fYpaAprgW6g73M5anIIeSaXKmNxZaPZ8Yfck6NZV
+RS7fvEBKsoPQh8wtcZu/1BOmCKBbwUTpmF9ll4PwKG+vvBM9i67Bp6an4Cy21Z+L
++lAOUfzcy+n3zAVYXgXxEh8ifkdAG2eFKbqSozhR9BD79eAb2qxaA+xoGfGEafhK
+s6KTKvmkjYXcZ/yqhjpqKE7dK1Khn1/t+V6gTH6OiCJwG5YJNVJtIQ1WZBDsLekZ
+BwIDAQAB
+-----END PUBLIC KEY-----`,
+  privateKey: `-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEApjVYvRE+goXRl3eAdrYVpFQ0/jlFkZGM9sQE+5xhN2GJz6WH
+xjvpzw+d8d8GokLWdcYyAdzUW8frefm7cgw8UqOFCJXYBbRC/tWPEKWXiiA6fYpa
+AprgW6g73M5anIIeSaXKmNxZaPZ8Yfck6NZVRS7fvEBKsoPQh8wtcZu/1BOmCKBb
+wUTpmF9ll4PwKG+vvBM9i67Bp6an4Cy21Z+L+lAOUfzcy+n3zAVYXgXxEh8ifkdA
+G2eFKbqSozhR9BD79eAb2qxaA+xoGfGEafhKs6KTKvmkjYXcZ/yqhjpqKE7dK1Kh
+n1/t+V6gTH6OiCJwG5YJNVJtIQ1WZBDsLekZBwIDAQABAoIBABv3L+YoB5+Iipp0
+tf3DZ2LN9FiuJEF4/wHqO3hmeIkL9Vcl3/F/1ThMxWOUBha5LkKExZdAo86Jldph
+JaPr4R56ewDVzZIwIXGlVzwS0Kuh/pVu+PQlQQjLBr+BTQe2cQgtSChuMvERQB5v
+qhsvLQvF9klDfA4LVcPzm9XYwe8Z1Ey6GvA1tEAdc5kqYzqSyHLYQU3EiFe17wEI
+tk2wH0b5JZNRiIfx0ghR3DF7290v/W976MXttaHTyq+zroZ5Del6hvUE45qmGz2i
+MszxP4ZVaw6/bF+g2uvm4UypnR0HQf7llnftS1/4vx4wCyJqYQ8BkJ9kyspEnont
+hjiFW8kCgYEA/mMeZVWknz1OOMXLMHbRSTNJ4vNKieCcT3xF+kM28XvwT6o9hGNV
+LMECx82bIZ60UWX1ZBlQQI0MjVrcuFPO+tgyqVgghmwbNH735petkjl4PsjqXmdD
+RutWQ/JVuwXF0MZAHIKY2Td5TtJG97sUWowG/RESS9PvDS2CiawohaMCgYEAp0Mc
+JWbaHDUADGs/agdUvIi5SP9JljyZOLmHDoOiLelRr71trQTQpNOep8uL6G4OzF8G
+48oJcQ7GemUFTUn/dYfPSSZoD1CNNIo/4WYywEmTfOQCnl46WlDM0W1bcBbZZcWX
+APTaIlsMFiO2J2DDzllhyQyPkfFQUgW7ZYwL7U0CgYEA5gTECEbvatlpMGaQ+sqF
+JRZOOftZK+DAFhM9xzQdqy8xNSevJlUXQDdqBzZ/jl/NlkiGIbPN4ABqGCrPp5CI
+eEMjVAKOrl10H/yqtYPy+2QhuUu8uA3RRIApaZjnMgvfOY75i43/HXJOqxnx97De
+j51L+GoGTDBfWGANR+U2YtcCgYEAoh/mlEpRd63X0jHSUc+xTt2n2x24EivCyLzs
+MCFffej+CL4wJNjZ9Co7SqF9h1nGdkpVv04CQNf1goWQ0g271AxD27+iddW6SQcI
+TE5nOwMWNqQ79Y2YOhq/rO+3BbrgFkmjyIWNOmfOG1eaJCkjIkx5AAtwziF9nUN5
+FUDd/rECgYEAr+dsAqdcqwx8ueDvM9MXfenVq3ovRk3gsU4Voo0V0uxL4j/e6HfG
+FMKIz3DK8hRDfSuzhA6g7jD+dzeJlT5ofQKhQZleC1CpA5eAP8icMdbEf6rekx6O
+8iG6qLaQooYelO1rDyNPRCefxnaKTEHe/GukUSRt8KociOOdgXBG/sI=
+-----END RSA PRIVATE KEY-----`,
 };
