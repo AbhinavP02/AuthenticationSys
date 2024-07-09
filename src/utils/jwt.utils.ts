@@ -15,7 +15,7 @@ export const signJwt = (
   });
 };
 
-const verifyJwt = (token: string) => {
+export const verifyJwt = (token: string) => {
   //verify with a public key
   try {
     const decoded = jwt.verify(token, publicKey);

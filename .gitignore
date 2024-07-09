@@ -41,4 +41,4 @@ dist/**/*
 yarn.lock
 
 # ignore default.ts
-config/default.ts
+config
