@@ -5,12 +5,12 @@ import { createUser } from "../service/user.service";
 import { CreateUserInput } from "../schema/user.schema";
 
 export const createUserHandler = async (
-  req: Request<{}, {}, CreateUserInput["body"]>,
+  req: Request<{}, {}, CreateUserInput["body"]>, // customises request object to createUserInput type
   res: Response
 ) => {
   try {
     const user = await createUser(req.body);
-    return res.send(omit(user.toJSON(), "password"));
+    return res.send(user);
   } catch (e: any) {
     logger.error(e);
     return res.sendStatus(409).send(e.message);

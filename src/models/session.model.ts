@@ -8,7 +8,7 @@ import { UserDocument } from "./user.model";
 //   password: string;
 // }
 
-export interface SchemaDocument extends mongoose.Document {
+export interface SessionDocument extends mongoose.Document {
   user: UserDocument["_id"];
   valid: boolean;
   userAgent: string;
@@ -27,6 +27,6 @@ const sessionSchema = new mongoose.Schema(
   }
 );
 
-const SessionModel = mongoose.model("Session", sessionSchema);
+const SessionModel = mongoose.model<SessionDocument>("Session", sessionSchema);
 
 export default SessionModel;

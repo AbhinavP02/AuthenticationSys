@@ -14,7 +14,7 @@ export interface UserDocument extends UserInput, mongoose.Document {
   comparePassword(candidatePassword: string): Promise<Boolean>;
 }
 
-const userSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema( //what is going to be saved inside this document of user in user collection
   {
     email: { type: String, required: true, unique: true },
     name: { type: String, required: true },

@@ -1,6 +1,7 @@
 import { omit } from "lodash";
-import UserModel, { UserInput } from "../models/user.model";
-
+import UserModel, { UserDocument, UserInput } from "../models/user.model";
+import { FilterQuery } from "mongoose";
+// createUser creates the user document in the user collection of UserModel in mongodb atlas
 export const createUser = async (input: UserInput) => {
   try {
     const user = await UserModel.create(input);
@@ -10,6 +11,7 @@ export const createUser = async (input: UserInput) => {
   }
 };
 
+//validating if this email password pair is in db or not
 export const validatePassword = async ({
   email,
   password,
@@ -30,4 +32,8 @@ export const validatePassword = async ({
   }
 
   return omit(user.toJSON(), "password");
+};
+
+export const findUser = async (query: FilterQuery<UserDocument>) => {
+  return UserModel.findOne(query).lean();
 };

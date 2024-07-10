@@ -3,6 +3,7 @@
 import { object, string, TypeOf } from "zod";
 
 export const createUserSchema = object({
+  //used to validate the incoming request to login
   body: object({
     name: string({
       required_error: "Name is required",

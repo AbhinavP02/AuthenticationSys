@@ -1,5 +1,5 @@
 import { object, string } from "zod";
-
+// this schema is used to validate incoming request
 export const createSessionSchema = object({
   body: object({
     email: string({
