@@ -3,8 +3,8 @@ export default {
   dburi:
     "mongodb+srv://abhinavprasad0209:restnigtest@resttest.mr236ol.mongodb.net/?retryWrites=true&w=majority&appName=restTest",
   saltWorkFactor: 10, // salt rounds
-  accessTokenttl: "15m",
-  refreshTokenttl: "1y",
+  accessTokenTtl: "15m",
+  refreshTokenTtl: "1y",
   publicKey: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApjVYvRE+goXRl3eAdrYV
 pFQ0/jlFkZGM9sQE+5xhN2GJz6WHxjvpzw+d8d8GokLWdcYyAdzUW8frefm7cgw8

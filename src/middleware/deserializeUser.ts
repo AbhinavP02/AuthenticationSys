@@ -28,9 +28,9 @@ const deserializeUser = async (
 
   if (expired && refreshToken) {
     //reissue the access token if refresh token is valid (do this in session service)
-    console.log("yaha pohoch gaya");
+    // console.log("yaha pohoch gaya");
     const newAccessToken = await reIssueAccessToken({ refreshToken });
-
+    // console.log(newAccessToken);
     if (newAccessToken) {
       res.setHeader("x-access-token", newAccessToken);
     }

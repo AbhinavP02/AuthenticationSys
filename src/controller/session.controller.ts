@@ -28,7 +28,7 @@ export const createUserSessionHandler = async (req: Request, res: Response) => {
       ...user,
       session: session._id,
     },
-    { expiresIn: config.get("accessTokenttl") } //15 mins
+    { expiresIn: config.get("accessTokenTtl") } //15 mins
   );
   //create refresh token
 
@@ -37,7 +37,7 @@ export const createUserSessionHandler = async (req: Request, res: Response) => {
       ...user,
       session: session._id,
     },
-    { expiresIn: config.get("refreshTokenttl") } //1 yr
+    { expiresIn: config.get("refreshTokenTtl") } //1 yr
   );
 
   //return access and refresh tokens

@@ -31,7 +31,7 @@ export const reIssueAccessToken = async ({
   refreshToken: string;
 }) => {
   const { decoded } = verifyJwt(refreshToken);
-
+  console.log(decoded);
   if (!decoded || !get(decoded, "session")) return false; // refreshtoken not verified or sessionid is null (session is not valid)
 
   const session = await SessionModel.findById(get(decoded, "session"));
@@ -41,7 +41,7 @@ export const reIssueAccessToken = async ({
     return false;
   }
 
-  const user = await findUser({ id: session.user });
+  const user = await findUser({ _id: session.user });
 
   if (!user) return false; //if no user
 
@@ -52,7 +52,7 @@ export const reIssueAccessToken = async ({
       ...user,
       session: session._id,
     },
-    { expiresIn: config.get("accessTokenttl") } //15 mins
+    { expiresIn: config.get("accessTokenTtl") } //15 mins
   );
 
   return accessToken;
